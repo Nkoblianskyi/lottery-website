@@ -241,7 +241,7 @@ export default function HomePage() {
       </section>
 
       {/* Lottery Types Section */}
-      <AnimatedSection animation="fadeInUp">
+      {/* <AnimatedSection animation="fadeInUp">
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <h3 className="text-4xl font-bold text-center mb-12 text-blue-900">Our Lottery Games</h3>
@@ -289,7 +289,7 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-      </AnimatedSection>
+      </AnimatedSection> */}
 
       {/* Oz Lotto Section */}
       <AnimatedSection animation="fadeInUp">
@@ -385,7 +385,7 @@ export default function HomePage() {
       </AnimatedSection>
 
       {/* The Lott Section */}
-      <AnimatedSection animation="fadeInUp">
+      {/* <AnimatedSection animation="fadeInUp">
         <section className="py-16 bg-gradient-to-r from-blue-50 to-orange-50">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
@@ -412,7 +412,7 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-      </AnimatedSection>
+      </AnimatedSection> */}
     </div>
   )
 }

@@ -389,7 +389,7 @@ export default function FAQPage() {
         </AnimatedSection>
 
         <div className="max-w-4xl mx-auto">
-          <AnimatedSection animation="fadeInDown">
+          <AnimatedSection animation="fadeIn">
             <h1 className="text-3xl sm:text-4xl font-bold text-blue-900 mb-2 text-center">
               Frequently Asked Questions
             </h1>
@@ -411,7 +411,7 @@ export default function FAQPage() {
                   onChange={(e) => setSearchTerm(e.target.value)}
                 />
               </div>
-
+{/* 
               <div className="flex flex-wrap gap-2">
                 {categories.map((category, index) => (
                   <AnimatedSection key={category} animation="scaleIn" delay={index * 50}>
@@ -429,7 +429,7 @@ export default function FAQPage() {
                     </Button>
                   </AnimatedSection>
                 ))}
-              </div>
+              </div> */}
             </div>
           </AnimatedSection>
 
