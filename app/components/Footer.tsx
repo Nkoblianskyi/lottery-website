@@ -35,16 +35,6 @@ export default function Footer() {
                   Cookie Policy
                 </Link>
               </li>
-              <li>
-                <a href="#" className="hover:text-orange-300">
-                  Terms & Conditions
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-orange-300">
-                  Help & Support
-                </a>
-              </li>
             </ul>
           </div>
 
