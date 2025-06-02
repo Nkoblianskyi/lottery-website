@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import {
   Dialog,
@@ -22,6 +22,18 @@ export default function Header() {
   const [loginOpen, setLoginOpen] = useState(false)
   const [registerOpen, setRegisterOpen] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
+  useEffect(() => {
+    const handleOpenLogin = () => {
+      setLoginOpen(true)
+    }
+
+    window.addEventListener("openLogin", handleOpenLogin)
+
+    return () => {
+      window.removeEventListener("openLogin", handleOpenLogin)
+    }
+  }, [])
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault()

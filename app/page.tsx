@@ -57,7 +57,7 @@ export default function HomePage() {
         className="py-10 sm:py-16 bg-gradient-to-r from-blue-900 via-blue-800 to-orange-600 text-white overflow-hidden"
       >
         <div className="container mx-auto px-3 sm:px-4 text-center">
-          <AnimatedSection  animation="fadeInUp">
+          <AnimatedSection animation="fadeIn">
             <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 sm:mb-6">
               Australia's Premier Lottery Experience
             </h2>
@@ -107,6 +107,10 @@ export default function HomePage() {
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
                   <Button
                     size="lg"
+                    onClick={() => {
+                      // Trigger login dialog by dispatching a custom event
+                      window.dispatchEvent(new CustomEvent("openLogin"))
+                    }}
                     className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 text-base sm:text-lg hover-lift hover-glow transition-all duration-300"
                   >
                     Buy Ticket Now
@@ -115,6 +119,10 @@ export default function HomePage() {
                   <Button
                     size="lg"
                     variant="outline"
+                    onClick={() => {
+                      // Trigger login dialog by dispatching a custom event
+                      window.dispatchEvent(new CustomEvent("openLogin"))
+                    }}
                     className="border-white text-black hover:bg-white hover:text-blue-900 font-bold py-3 sm:py-4 px-6 sm:px-8 text-base sm:text-lg hover-lift transition-all duration-300"
                   >
                     Contact Us
