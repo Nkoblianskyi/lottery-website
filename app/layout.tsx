@@ -14,7 +14,6 @@ export const metadata: Metadata = {
     "Play Oz Lotto, Powerball, and Saturday Lotto with Australia's trusted lottery operator since 1994. Buy tickets online and win big!",
   keywords: "lottery, oz lotto, powerball, saturday lotto, australia, online lottery, tickets",
   viewport: "width=device-width, initial-scale=1, minimum-scale=1",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
