@@ -33,7 +33,7 @@ const faqs: FAQItemProps[] = [
         </p>
       </div>
     ),
-    category: "Oz Lotto",
+    category: "Basics",
   },
   {
     question: "How much does it cost to play Oz Lotto?",
@@ -56,7 +56,7 @@ const faqs: FAQItemProps[] = [
         </p>
       </div>
     ),
-    category: "Oz Lotto",
+    category: "Basics",
   },
   {
     question: "What are the odds of winning Oz Lotto?",
@@ -78,174 +78,27 @@ const faqs: FAQItemProps[] = [
         </p>
       </div>
     ),
-    category: "Oz Lotto",
+    category: "Odds & Prizes",
   },
   {
-    question: "What is The Lott?",
-    answer: (
-      <p>
-        The Lott is Australia's official lotteries brand operated by Tattersall's Sweeps Pty Ltd. It's the unified brand
-        that brings together all of Australia's official lottery games, including Oz Lotto, Powerball, Saturday Lotto,
-        Monday & Wednesday Lotto, Set for Life, Lucky Lotteries, and Instant Scratch-Its. The Lott operates in all
-        Australian states and territories except Western Australia (where Lotterywest operates). It's the only
-        government-licensed lottery operator in these jurisdictions, ensuring all games are conducted fairly and
-        securely.
-      </p>
-    ),
-    category: "The Lott",
-  },
-  {
-    question: "How are lottery proceeds distributed in Australia?",
+    question: "When are Oz Lotto draws held?",
     answer: (
       <div>
         <p>
-          Lottery proceeds in Australia are distributed according to state regulations, but generally follow this
-          pattern:
+          Oz Lotto draws are held every Tuesday at 7:30 PM AEST/AEDT. The draw is conducted at The Lott's secure draw
+          facility and is supervised by independent auditors to ensure fairness.
         </p>
-        <ul className="list-disc pl-5 mt-2 space-y-1">
-          <li>
-            <strong>Prize money:</strong> Approximately 60% of ticket sales goes back to players as prize money
-          </li>
-          <li>
-            <strong>State government:</strong> Around 25-35% goes to state governments for community initiatives,
-            including:
-            <ul className="list-circle pl-5 mt-1 space-y-1">
-              <li>Health services and hospitals</li>
-              <li>Sports and recreation programs</li>
-              <li>Arts and cultural activities</li>
-              <li>Community welfare programs</li>
-            </ul>
-          </li>
-          <li>
-            <strong>Retailers:</strong> About 9% goes to the retailers who sell lottery products
-          </li>
-          <li>
-            <strong>Operating costs:</strong> The remaining funds cover the costs of running the lottery
-          </li>
-        </ul>
         <p className="mt-2">
-          This means that even if you don't win, your lottery purchase contributes to important community services and
-          infrastructure.
+          Results are typically available within 30 minutes of the draw on our website, mobile app, and through various
+          media outlets across Australia.
+        </p>
+        <p className="mt-2">
+          If you play online, you'll receive an email notification if you win a prize, and smaller prizes are
+          automatically credited to your account.
         </p>
       </div>
     ),
-    category: "General",
-  },
-  {
-    question: "What is Powerball and how is it different from Oz Lotto?",
-    answer: (
-      <div>
-        <p>Powerball is another popular Australian lottery game with some key differences from Oz Lotto:</p>
-        <ul className="list-disc pl-5 mt-2 space-y-1">
-          <li>
-            <strong>Draw structure:</strong> In Powerball, you select 7 main numbers from 1-35 and 1 Powerball number
-            from 1-20. In Oz Lotto, you select 7 numbers from 1-45 with no separate Powerball.
-          </li>
-          <li>
-            <strong>Draw day:</strong> Powerball draws occur every Thursday, while Oz Lotto draws are on Tuesdays.
-          </li>
-          <li>
-            <strong>Jackpot sizes:</strong> Powerball typically offers larger jackpots, often reaching $100 million or
-            more.
-          </li>
-          <li>
-            <strong>Winning odds:</strong> The odds of winning Division 1 in Powerball are 1 in 134,490,400, which is
-            more challenging than Oz Lotto's 1 in 45,379,620.
-          </li>
-        </ul>
-        <p className="mt-2">
-          Both games offer multi-million dollar jackpots and multiple prize divisions, but Powerball's separate
-          Powerball number creates a different gameplay experience and typically larger jackpots.
-        </p>
-      </div>
-    ),
-    category: "Other Lotteries",
-  },
-  {
-    question: "How do I claim a lottery prize?",
-    answer: (
-      <div>
-        <p>The process for claiming lottery prizes depends on the prize amount:</p>
-        <ul className="list-disc pl-5 mt-2 space-y-1">
-          <li>
-            <strong>Online purchases:</strong>
-            <ul className="list-circle pl-5 mt-1 space-y-1">
-              <li>Prizes up to $1,000 are automatically paid into your online account</li>
-              <li>
-                Prizes between $1,000 and $10,000 can be transferred to your nominated bank account through your online
-                account
-              </li>
-              <li>Prizes over $10,000 require you to contact The Lott customer service for claiming instructions</li>
-            </ul>
-          </li>
-          <li>
-            <strong>In-store purchases:</strong>
-            <ul className="list-circle pl-5 mt-1 space-y-1">
-              <li>Prizes up to $1,500 can be claimed at any lottery outlet</li>
-              <li>
-                Prizes between $1,500 and $10,000 can be claimed at selected lottery outlets or mailed to The Lott
-              </li>
-              <li>Major prizes over $10,000 must be claimed directly from The Lott's head office in your state</li>
-            </ul>
-          </li>
-        </ul>
-        <p className="mt-2">
-          For all major prizes, you'll need to provide the winning ticket and identification. Prize claim periods vary
-          by state but are typically 6-12 months from the draw date.
-        </p>
-      </div>
-    ),
-    category: "General",
-  },
-  {
-    question: "What is Saturday Lotto?",
-    answer: (
-      <div>
-        <p>
-          Saturday Lotto (also known as TattsLotto, Gold Lotto, or X Lotto depending on your state) is Australia's
-          original lottery game, running since 1972. Here's how it works:
-        </p>
-        <ul className="list-disc pl-5 mt-2 space-y-1">
-          <li>Players select 6 numbers from 1 to 45</li>
-          <li>In each draw, 6 winning numbers and 2 supplementary numbers are drawn</li>
-          <li>Draws take place every Saturday night</li>
-          <li>
-            The Division 1 prize pool is typically $4 million, with special Superdraws offering jackpots of $20 million
-            or more several times a year
-          </li>
-          <li>There are 6 prize divisions, with Division 1 requiring all 6 winning numbers</li>
-        </ul>
-        <p className="mt-2">
-          Saturday Lotto offers better odds of winning Division 1 (1 in 8,145,060) compared to Oz Lotto or Powerball,
-          making it a popular choice for regular players.
-        </p>
-      </div>
-    ),
-    category: "Other Lotteries",
-  },
-  {
-    question: "Is online lottery play legal in Australia?",
-    answer: (
-      <div>
-        <p>
-          Yes, online lottery play is completely legal in Australia when done through authorized operators. The Lott
-          (Tattersall's) is the official government-licensed lottery operator in all Australian states and territories
-          except Western Australia, where Lotterywest is the official operator.
-        </p>
-        <p className="mt-2">Playing through these official channels ensures that:</p>
-        <ul className="list-disc pl-5 mt-2 space-y-1">
-          <li>Your personal and financial information is secure</li>
-          <li>Games are conducted fairly and with regulatory oversight</li>
-          <li>You'll receive any prizes you win</li>
-          <li>A portion of proceeds goes to community initiatives</li>
-        </ul>
-        <p className="mt-2">
-          Be cautious of unauthorized overseas lottery websites that target Australians, as these may not be legal or
-          secure. Always play through official Australian lottery channels.
-        </p>
-      </div>
-    ),
-    category: "General",
+    category: "Draws",
   },
   {
     question: "What happens if no one wins the Oz Lotto jackpot?",
@@ -258,15 +111,154 @@ const faqs: FAQItemProps[] = [
         it resets to the minimum Division 1 prize pool of $2 million and begins building again.
       </p>
     ),
-    category: "Oz Lotto",
+    category: "Jackpots",
   },
   {
-    question: "How are lottery winners taxed in Australia?",
+    question: "How do I choose my Oz Lotto numbers?",
+    answer: (
+      <div>
+        <p>There are several ways to choose your Oz Lotto numbers:</p>
+        <ul className="list-disc pl-5 mt-2 space-y-1">
+          <li>
+            <strong>Pick your own:</strong> Choose 7 numbers from 1 to 45 that are meaningful to you
+          </li>
+          <li>
+            <strong>QuickPick:</strong> Let the computer randomly select your numbers
+          </li>
+          <li>
+            <strong>System entries:</strong> Choose more than 7 numbers to cover more combinations
+          </li>
+          <li>
+            <strong>Favourite numbers:</strong> Save your lucky numbers to play regularly
+          </li>
+        </ul>
+        <p className="mt-2">
+          Remember, every number combination has an equal chance of winning. Some players choose birthdays,
+          anniversaries, or other significant dates, while others prefer random selections.
+        </p>
+      </div>
+    ),
+    category: "How to Play",
+  },
+  {
+    question: "What are System entries in Oz Lotto?",
     answer: (
       <div>
         <p>
-          <strong>Good news for Australian lottery winners:</strong> Lottery winnings are not taxed in Australia! This
-          applies to all prizes from officially sanctioned lotteries including Oz Lotto, Powerball, and Saturday Lotto.
+          System entries allow you to choose more than the standard 7 numbers, giving you more chances to win. Here's
+          how they work:
+        </p>
+        <ul className="list-disc pl-5 mt-2 space-y-1">
+          <li>
+            <strong>System 8:</strong> Choose 8 numbers, creates 8 standard games
+          </li>
+          <li>
+            <strong>System 9:</strong> Choose 9 numbers, creates 36 standard games
+          </li>
+          <li>
+            <strong>System 10:</strong> Choose 10 numbers, creates 120 standard games
+          </li>
+          <li>
+            <strong>System 20:</strong> Choose 20 numbers, creates 77,520 standard games
+          </li>
+        </ul>
+        <p className="mt-2">
+          The more numbers you choose, the more combinations you cover, but the cost increases accordingly. System
+          entries guarantee that if your chosen numbers include the winning numbers, you'll win multiple prizes across
+          different divisions.
+        </p>
+      </div>
+    ),
+    category: "How to Play",
+  },
+  {
+    question: "How do I claim my Oz Lotto prize?",
+    answer: (
+      <div>
+        <p>The process for claiming Oz Lotto prizes depends on the prize amount and how you played:</p>
+        <ul className="list-disc pl-5 mt-2 space-y-1">
+          <li>
+            <strong>Online purchases:</strong>
+            <ul className="list-circle pl-5 mt-1 space-y-1">
+              <li>Prizes up to $1,000 are automatically paid into your online account</li>
+              <li>
+                Prizes between $1,000 and $10,000 can be transferred to your nominated bank account through your online
+                account
+              </li>
+              <li>
+                Prizes over $10,000 require you to contact AussieBigWins customer service for claiming instructions
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>In-store purchases:</strong>
+            <ul className="list-circle pl-5 mt-1 space-y-1">
+              <li>Prizes up to $1,500 can be claimed at any lottery outlet</li>
+              <li>Prizes between $1,500 and $10,000 can be claimed at selected lottery outlets or mailed to us</li>
+              <li>Major prizes over $10,000 must be claimed directly from our head office</li>
+            </ul>
+          </li>
+        </ul>
+        <p className="mt-2">
+          For all major prizes, you'll need to provide the winning ticket and identification. Prize claim periods are
+          typically 6-12 months from the draw date.
+        </p>
+      </div>
+    ),
+    category: "Prizes",
+  },
+  {
+    question: "Can I play Oz Lotto online?",
+    answer: (
+      <div>
+        <p>
+          Yes! You can play Oz Lotto online through our secure website or mobile app. Online play offers several
+          advantages:
+        </p>
+        <ul className="list-disc pl-5 mt-2 space-y-1">
+          <li>Never lose your ticket - it's stored digitally in your account</li>
+          <li>Automatic prize notifications via email</li>
+          <li>Prizes up to $1,000 are automatically credited to your account</li>
+          <li>Set up recurring entries so you never miss a draw</li>
+          <li>Access to exclusive online promotions</li>
+          <li>Check results and manage your entries anytime, anywhere</li>
+        </ul>
+        <p className="mt-2">
+          To play online, you need to be 18 or over and have an Australian address and bank account. Registration is
+          quick and secure.
+        </p>
+      </div>
+    ),
+    category: "Online Play",
+  },
+  {
+    question: "What is the biggest Oz Lotto jackpot ever won?",
+    answer: (
+      <div>
+        <p>
+          The largest Oz Lotto jackpot ever won was $111 million in November 2012, which was shared between two winning
+          tickets. Other notable jackpots include:
+        </p>
+        <ul className="list-disc pl-5 mt-2 space-y-1">
+          <li>$90 million - Won by a single ticket holder in 2009</li>
+          <li>$80 million - Multiple occasions with various winners</li>
+          <li>$70 million - Several times throughout Oz Lotto's history</li>
+        </ul>
+        <p className="mt-2">
+          These massive jackpots occur when the Division 1 prize isn't won for several weeks, allowing it to jackpot and
+          grow. The excitement builds across Australia as the jackpot climbs higher each week!
+        </p>
+      </div>
+    ),
+    category: "Jackpots",
+  },
+  {
+    question: "Are Oz Lotto winnings taxed in Australia?",
+    answer: (
+      <div>
+        <p>
+          <strong>Good news for Oz Lotto winners:</strong> Lottery winnings are not taxed in Australia! This applies to
+          all prizes from Oz Lotto and other officially sanctioned lotteries.
         </p>
         <p className="mt-2">However, there are some financial considerations to be aware of:</p>
         <ul className="list-disc pl-5 mt-2 space-y-1">
@@ -284,72 +276,52 @@ const faqs: FAQItemProps[] = [
           </li>
         </ul>
         <p className="mt-2">
-          It's always recommended to consult with a financial advisor after winning a significant lottery prize to
+          It's always recommended to consult with a financial advisor after winning a significant Oz Lotto prize to
           ensure you manage your windfall effectively.
         </p>
       </div>
     ),
-    category: "General",
+    category: "Prizes",
   },
   {
-    question: "Can I play Australian lotteries from overseas?",
+    question: "Can I play Oz Lotto if I'm under 18?",
     answer: (
-      <div>
-        <p>The rules regarding playing Australian lotteries from overseas depend on several factors:</p>
-        <ul className="list-disc pl-5 mt-2 space-y-1">
-          <li>
-            <strong>Online accounts:</strong> To create an online account with The Lott, you generally need to be an
-            Australian resident with an Australian address and bank account
-          </li>
-          <li>
-            <strong>Physical tickets:</strong> Non-residents who are physically in Australia can purchase lottery
-            tickets from authorized retailers while visiting
-          </li>
-          <li>
-            <strong>Claiming prizes:</strong> You must be in Australia to purchase tickets and claim prizes in person
-          </li>
-        </ul>
-        <p className="mt-2">
-          Some third-party lottery services claim to offer Australian lottery tickets to overseas players, but these are
-          not officially endorsed by The Lott and may have legal and security implications. If you're overseas and want
-          to play Australian lotteries, it's best to have a trusted Australian resident purchase tickets on your behalf.
-        </p>
-      </div>
+      <p>
+        No, you must be 18 years or older to play Oz Lotto or any other lottery game in Australia. This is a legal
+        requirement across all Australian states and territories. Age verification is required when creating an online
+        account or purchasing tickets in-store. If you're under 18, you'll need to wait until your 18th birthday to
+        participate in lottery games.
+      </p>
     ),
-    category: "General",
+    category: "Eligibility",
   },
   {
-    question: "What is a Syndicate and how does it work?",
+    question: "What are supplementary numbers in Oz Lotto?",
     answer: (
       <div>
         <p>
-          A lottery syndicate is a group of players who pool their money to buy more tickets than they could
-          individually, increasing their chances of winning while sharing the cost.
+          In each Oz Lotto draw, 7 winning numbers are drawn first, followed by 2 supplementary numbers. The
+          supplementary numbers are used to determine winners in Divisions 2, 4, and 7:
         </p>
-        <p className="mt-2">Here's how syndicates work:</p>
         <ul className="list-disc pl-5 mt-2 space-y-1">
           <li>
-            <strong>Store syndicates:</strong> Many lottery retailers offer pre-packaged syndicate shares you can buy
-            into
+            <strong>Division 2:</strong> Match 6 winning numbers + 1 supplementary number
           </li>
           <li>
-            <strong>Private syndicates:</strong> Groups of friends, family, or colleagues can form their own syndicates
+            <strong>Division 4:</strong> Match 5 winning numbers + 1 supplementary number
           </li>
           <li>
-            <strong>Online syndicates:</strong> The Lott's website offers digital syndicate options
+            <strong>Division 7:</strong> Match 3 winning numbers + 1 supplementary number
           </li>
         </ul>
         <p className="mt-2">
-          If a syndicate entry wins, the prize is divided equally among all shares. For example, if a 10-share syndicate
-          wins $1 million, each share receives $100,000.
-        </p>
-        <p className="mt-2">
-          Syndicates are a popular way to increase your chances of winning without spending more money, though any
-          prizes won will be shared among all participants.
+          The supplementary numbers give you additional chances to win prizes even if you don't match all the main
+          winning numbers. They're drawn from the same pool of numbers (1-45) but cannot be the same as the 7 main
+          winning numbers.
         </p>
       </div>
     ),
-    category: "General",
+    category: "How to Play",
   },
 ]
 
@@ -390,11 +362,9 @@ export default function FAQPage() {
 
         <div className="max-w-4xl mx-auto">
           <AnimatedSection animation="fadeIn">
-            <h1 className="text-3xl sm:text-4xl font-bold text-blue-900 mb-2 text-center">
-              Frequently Asked Questions
-            </h1>
+            <h1 className="text-3xl sm:text-4xl font-bold text-blue-900 mb-2 text-center">Oz Lotto FAQ</h1>
             <p className="text-gray-600 text-center mb-8">
-              Find answers to common questions about Australian lotteries and how they work
+              Everything you need to know about Australia's Tuesday night lottery
             </p>
           </AnimatedSection>
 
@@ -411,7 +381,7 @@ export default function FAQPage() {
                   onChange={(e) => setSearchTerm(e.target.value)}
                 />
               </div>
-{/* 
+
               <div className="flex flex-wrap gap-2">
                 {categories.map((category, index) => (
                   <AnimatedSection key={category} animation="scaleIn" delay={index * 50}>
@@ -429,7 +399,7 @@ export default function FAQPage() {
                     </Button>
                   </AnimatedSection>
                 ))}
-              </div> */}
+              </div>
             </div>
           </AnimatedSection>
 
